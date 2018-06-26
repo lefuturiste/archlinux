@@ -1,6 +1,18 @@
 # archlinux
 All misc file, docs for me to help on my archlinux environment setup
 
+## mount data disk
+
+`fdisk -l` 
+
+mount:
+
+`sudo mount -t ntfs /dev/sda1 /mnt/data/`
+
+ajout dans `/etc/fstab`:
+
+`UUID=58B9C00-57A0-4376-8877-0A334D85A982 /mnt/data ntfs defaults 0 0`
+
 ## sublime text
 
 use `sublime-text-dev` package
